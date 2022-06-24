@@ -1,0 +1,14 @@
+diff --git a/node_modules/import-html-entry/esm/process-tpl.js b/node_modules/import-html-entry/esm/process-tpl.js
+index 6e40ce9..5155056 100644
+--- a/node_modules/import-html-entry/esm/process-tpl.js
++++ b/node_modules/import-html-entry/esm/process-tpl.js
+@@ -31,6 +31,9 @@ function hasProtocol(url) {
+ }
+ 
+ function getEntirePath(path, baseURI) {
++  if(path.includes('static-resource')){
++    return new URL(path, location.origin).toString();
++  }
+   return new URL(path, baseURI).toString();
+ }
+ 

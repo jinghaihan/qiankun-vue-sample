@@ -1,0 +1,42 @@
+{
+  "name": "qiankun-vue-sample",
+  "version": "1.0.0",
+  "description": "基于qiankun的微前端示例",
+  "scripts": {
+    "install:sample": "cd micro-sample && yarn",
+    "install:demo": "cd micro-demo && yarn",
+    "install:workbench": "cd micro-workbench && yarn",
+    "install:main": "cd micro-main && yarn",
+    "install-all": "npm-run-all install:*",
+
+    "start:sample": "cd micro-sample && yarn dev",
+    "start:demo": "cd micro-demo && yarn dev",
+    "start:workbench": "cd micro-workbench && yarn dev",
+    "start:main": "cd micro-main && yarn dev",
+    "start-all": "npm-run-all --parallel start:*",
+
+    "build:sample": "cd micro-sample && yarn build",
+    "build:demo": "cd micro-demo && yarn build",
+    "build:workbench": "cd micro-workbench && yarn build",
+    "build:main": "cd micro-main && yarn build",
+    "build-all": "npm-run-all --parallel build:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jinghaihan/qiankun-vue-sample.git"
+  },
+  "author": "gongshun",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jinghaihan/qiankun-vue-sample/issues"
+  },
+  "homepage": "https://github.com/jinghaihan/qiankun-vue-sample#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/eslint-config-standard": "^4.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2"
+  }
+}
